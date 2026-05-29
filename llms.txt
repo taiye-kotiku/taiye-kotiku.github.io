@@ -1,0 +1,27 @@
+# Taiye Promise K.
+
+> AI automation developer, product builder, and founder of Kotique Studio. Based in Akure, Nigeria.
+
+Taiye Promise K. is a developer and entrepreneur who builds AI-powered tools, automation systems, and digital products. He is the founder of Kotique Studio, an AI-powered film studio infrastructure project. He studies at FUTA (Federal University of Technology, Akure).
+
+## What he does
+
+- **AI Automation**: Voice agents, WhatsApp bots, n8n workflows. Helps businesses automate slow processes.
+- **Product Building**: Building Ghost Shift (anonymous job marketplace), Broken Hero (browser roguelike), Echo Vault (voice-based personal archive SaaS), and IRONBOUND.
+- **Kotique Studio**: Building AI-powered film studio infrastructure — not making films, building the machine that will.
+- **Student**: Studying at the Federal University of Technology, Akure (FUTA). Tech, always.
+
+## Currently building
+
+- Ghost Shift — Anonymous job marketplace. In development.
+- Broken Hero — Browser roguelike with deck-building. In development.
+- Echo Vault — Voice-based personal archive SaaS. Planned.
+- Kotique Studio — AI film studio infrastructure. Active.
+- IRONBOUND — In development.
+
+## Connect
+
+- Upwork: https://www.upwork.com/freelancers/~01b3e3f59cbf1205f6
+- Fiverr: https://www.fiverr.com/taiyekotiku
+- GitHub: https://github.com/taiye-kotiku
+- Email: kotikutaiye@gmail.com

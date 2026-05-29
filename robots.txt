@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taiye-kotiku.github.io/sitemap.xml
