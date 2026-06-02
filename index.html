@@ -375,6 +375,8 @@
   .row[data-status="active"] .status { color: var(--fg); }
   .row[data-status="dev"] .status .dot { background: rgba(245, 244, 241, 0.55); }
   .row[data-status="planned"] .status .dot { background: transparent; box-shadow: inset 0 0 0 1px var(--fg-faint); }
+  .row[data-status="pause"] .status .dot { background: transparent; box-shadow: inset 0 0 0 1px var(--fg-faint); }
+  .row[data-status="pause"] .status { color: var(--fg-faint); }
 
   /* ── aside / also ──────────────────────────── */
   .also {
@@ -666,6 +668,19 @@
   }
   .case:hover .c-arr { transform: translate(3px, -3px); }
 
+  .case--own {
+    border-left: 2px solid var(--cobalt);
+    padding-left: 20px;
+    margin-left: -22px;
+  }
+  .case--own .c-title { color: var(--fg); }
+  .c-tag--live {
+    background: rgba(37,99,235,0.12);
+    border-color: rgba(37,99,235,0.35);
+    color: var(--cobalt);
+    font-weight: 500;
+  }
+
   @media (max-width: 640px) {
     .case {
       grid-template-columns: 2.5rem 1fr;
@@ -675,6 +690,7 @@
       display: none;
     }
     .case .c-body { grid-column: 2; }
+    .case--own { margin-left: -2px; }
   }
 </style>
 </head>
@@ -749,7 +765,23 @@
       <h2 class="label reveal">Selected work</h2>
       <div class="cases">
 
-        <a class="case reveal" href="https://github.com/taiye-kotiku/db-studio-voice-agent" target="_blank" rel="noopener">
+        <a class="case case--own reveal" href="https://leadoro.netlify.app" target="_blank" rel="noopener">
+          <span class="c-num">★</span>
+          <div class="c-body">
+            <h3 class="c-title">LeadOro — AI Lead Automation</h3>
+            <p class="c-desc">Responds to leads in 10 seconds, qualifies them with smart questions, books appointments, and follows up automatically. Multi-channel — WhatsApp, Instagram, Facebook Ads, website. Zero manual work.</p>
+            <div class="c-tags">
+              <span class="c-tag">n8n</span>
+              <span class="c-tag">WhatsApp API</span>
+              <span class="c-tag">AI Agents</span>
+              <span class="c-tag">Automation</span>
+              <span class="c-tag c-tag--live">Live ↗</span>
+            </div>
+          </div>
+          <span class="c-arr">↗</span>
+        </a>
+
+        <a class="case reveal" href="https://github.com/taiye-kotiku/db-studio-voice-agent" target="_blank" rel="noopener" style="--d: 40ms">
           <span class="c-num">01</span>
           <div class="c-body">
             <h3 class="c-title">DB Studio — Bilingual Sales Voice Agent</h3>
@@ -802,30 +834,35 @@
     <section id="building">
       <h2 class="label reveal">Currently building</h2>
       <div class="ledger">
-        <div class="row reveal" data-status="dev">
+        <a class="row reveal" data-status="active" href="https://leadoro.netlify.app" target="_blank" rel="noopener" style="text-decoration:none;">
           <span class="num">01</span>
+          <span class="name">LeadOro <span class="note">— AI lead automation. Multi-channel.</span></span>
+          <span class="status"><span class="dot"></span>Live</span>
+        </a>
+        <div class="row reveal" data-status="dev" style="--d: 60ms">
+          <span class="num">02</span>
           <span class="name">Ghost Shift <span class="note">— Anonymous job marketplace.</span></span>
           <span class="status"><span class="dot"></span>In development</span>
         </div>
-        <div class="row reveal" data-status="dev" style="--d: 60ms">
-          <span class="num">02</span>
+        <div class="row reveal" data-status="dev" style="--d: 120ms">
+          <span class="num">03</span>
           <span class="name">Broken Hero <span class="note">— Browser roguelike with deck-building.</span></span>
           <span class="status"><span class="dot"></span>In development</span>
         </div>
-        <div class="row reveal" data-status="planned" style="--d: 120ms">
-          <span class="num">03</span>
+        <div class="row reveal" data-status="planned" style="--d: 180ms">
+          <span class="num">04</span>
           <span class="name">Echo Vault <span class="note">— Voice-based personal archive SaaS.</span></span>
           <span class="status"><span class="dot"></span>Planned</span>
-        </div>
-        <div class="row reveal" data-status="active" style="--d: 180ms">
-          <span class="num">04</span>
-          <span class="name">Kotique Studio <span class="note">— AI film studio infrastructure.</span></span>
-          <span class="status"><span class="dot"></span>Active</span>
         </div>
         <div class="row reveal" data-status="dev" style="--d: 240ms">
           <span class="num">05</span>
           <span class="name">IRONBOUND <span class="note">— In development.</span></span>
           <span class="status"><span class="dot"></span>In development</span>
+        </div>
+        <div class="row reveal" data-status="pause" style="--d: 300ms">
+          <span class="num">06</span>
+          <span class="name">Kotique Studio <span class="note">— AI film studio infrastructure.</span></span>
+          <span class="status"><span class="dot"></span>On pause</span>
         </div>
       </div>
     </section>
