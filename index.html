@@ -599,6 +599,83 @@
     .reveal { opacity: 1; transform: none; transition: none; }
     html { scroll-behavior: auto; }
   }
+
+  /* ── selected work ─────────────────────────── */
+  #selected {
+    padding-top: clamp(96px, 13vw, 160px);
+  }
+  .cases {
+    border-top: 1px solid var(--rule);
+  }
+  .case {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr auto;
+    align-items: baseline;
+    gap: 0 clamp(20px, 3vw, 36px);
+    padding: clamp(20px, 2.5vw, 28px) 0;
+    border-bottom: 1px solid var(--rule);
+    text-decoration: none;
+    transition: padding-left 0.18s ease;
+  }
+  .case:hover { padding-left: 8px; }
+  .case .c-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--fg-faint);
+    padding-top: 3px;
+  }
+  .case .c-body { min-width: 0; }
+  .case .c-title {
+    font-family: var(--serif);
+    font-size: clamp(20px, 2.2vw, 26px);
+    font-weight: 400;
+    color: var(--fg);
+    margin: 0 0 6px 0;
+    line-height: 1.15;
+  }
+  .case .c-desc {
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--fg-muted);
+    margin: 0 0 12px 0;
+    max-width: 54ch;
+    text-wrap: pretty;
+  }
+  .case .c-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .case .c-tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--fg-faint);
+    border: 1px solid var(--rule);
+    padding: 3px 8px;
+    border-radius: 3px;
+  }
+  .case .c-arr {
+    font-size: 18px;
+    color: var(--cobalt);
+    transition: transform 0.18s ease;
+    padding-top: 2px;
+    flex-shrink: 0;
+  }
+  .case:hover .c-arr { transform: translate(3px, -3px); }
+
+  @media (max-width: 640px) {
+    .case {
+      grid-template-columns: 2.5rem 1fr;
+      grid-template-rows: auto auto;
+    }
+    .case .c-arr {
+      display: none;
+    }
+    .case .c-body { grid-column: 2; }
+  }
 </style>
 </head>
 <body>
@@ -606,7 +683,7 @@
 
     <!-- meta strip -->
     <div class="meta reveal">
-      <span><span class="dot"></span>Available — selectively</span>
+      <a href="https://cal.com/taiye-kotiku/15min" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:6px;"><span class="dot"></span>Available — selectively</a>
       <span>MMXXVI</span>
     </div>
 
@@ -667,6 +744,60 @@
       </div>
     </section>
 
+    <!-- selected work -->
+    <section id="selected">
+      <h2 class="label reveal">Selected work</h2>
+      <div class="cases">
+
+        <a class="case reveal" href="https://github.com/taiye-kotiku/db-studio-voice-agent" target="_blank" rel="noopener">
+          <span class="c-num">01</span>
+          <div class="c-body">
+            <h3 class="c-title">DB Studio — Bilingual Sales Voice Agent</h3>
+            <p class="c-desc">AI voice agent that handles inbound sales calls in French and English — qualifies leads, books appointments, and escalates edge cases. Runs 24/7 with no human in the loop.</p>
+            <div class="c-tags">
+              <span class="c-tag">Retell AI</span>
+              <span class="c-tag">Twilio</span>
+              <span class="c-tag">Node.js</span>
+              <span class="c-tag">Voice AI</span>
+            </div>
+          </div>
+          <span class="c-arr">↗</span>
+        </a>
+
+        <a class="case reveal" href="https://github.com/taiye-kotiku/neo-ai-running-coach" target="_blank" rel="noopener" style="--d: 80ms">
+          <span class="c-num">02</span>
+          <div class="c-body">
+            <h3 class="c-title">Neo — AI Running Coach on WhatsApp</h3>
+            <p class="c-desc">Personalized weekly training plans delivered over WhatsApp with automated subscription billing. Users pay, get coached, stay accountable — zero manual work.</p>
+            <div class="c-tags">
+              <span class="c-tag">n8n</span>
+              <span class="c-tag">GPT-4o</span>
+              <span class="c-tag">Stripe</span>
+              <span class="c-tag">Supabase</span>
+              <span class="c-tag">WhatsApp</span>
+            </div>
+          </div>
+          <span class="c-arr">↗</span>
+        </a>
+
+        <a class="case reveal" href="https://github.com/taiye-kotiku/justin-project-backend" target="_blank" rel="noopener" style="--d: 160ms">
+          <span class="c-num">03</span>
+          <div class="c-body">
+            <h3 class="c-title">Justin — AI Marketing Automation</h3>
+            <p class="c-desc">Automated product image generation and Instagram scheduling for an e-commerce brand. Batch processes orders using Gemini, generates composites in two templates, posts without touching a device.</p>
+            <div class="c-tags">
+              <span class="c-tag">Google Gemini</span>
+              <span class="c-tag">Node.js</span>
+              <span class="c-tag">Instagram API</span>
+              <span class="c-tag">React</span>
+            </div>
+          </div>
+          <span class="c-arr">↗</span>
+        </a>
+
+      </div>
+    </section>
+
     <!-- currently building -->
     <section id="building">
       <h2 class="label reveal">Currently building</h2>
@@ -708,28 +839,32 @@
     <section id="connect">
       <h2 class="label reveal">Connect</h2>
       <div class="links">
-        <a class="link reveal" href="https://www.upwork.com/freelancers/~01b3e3f59cbf1205f6" target="_blank" rel="noopener">
-          <span class="name"><span class="handle">01</span><strong>Upwork</strong></span>
+        <a class="link reveal" href="https://cal.com/taiye-kotiku/15min" target="_blank" rel="noopener">
+          <span class="name"><span class="handle">01</span><strong>Book a call</strong> <span style="color:var(--fg-faint);font-weight:300;">— 15 min</span></span>
           <span class="arr">↗</span>
         </a>
-        <a class="link reveal" href="https://www.fiverr.com/taiyekotiku" target="_blank" rel="noopener" style="--d: 60ms">
-          <span class="name"><span class="handle">02</span><strong>Fiverr</strong></span>
+        <a class="link reveal" href="https://www.upwork.com/freelancers/~01b3e3f59cbf1205f6" target="_blank" rel="noopener" style="--d: 60ms">
+          <span class="name"><span class="handle">02</span><strong>Upwork</strong></span>
           <span class="arr">↗</span>
         </a>
-        <a class="link reveal" href="https://github.com/taiye-kotiku" target="_blank" rel="noopener" style="--d: 120ms">
-          <span class="name"><span class="handle">03</span><strong>GitHub</strong></span>
+        <a class="link reveal" href="https://www.fiverr.com/taiyekotiku" target="_blank" rel="noopener" style="--d: 120ms">
+          <span class="name"><span class="handle">03</span><strong>Fiverr</strong></span>
           <span class="arr">↗</span>
         </a>
-        <a class="link reveal" href="https://www.linkedin.com/in/taiye-kotiku" target="_blank" rel="noopener" style="--d: 180ms">
-          <span class="name"><span class="handle">04</span><strong>LinkedIn</strong></span>
+        <a class="link reveal" href="https://github.com/taiye-kotiku" target="_blank" rel="noopener" style="--d: 180ms">
+          <span class="name"><span class="handle">04</span><strong>GitHub</strong></span>
           <span class="arr">↗</span>
         </a>
-        <a class="link reveal" href="https://x.com/taiyekotiku" target="_blank" rel="noopener" style="--d: 240ms">
-          <span class="name"><span class="handle">05</span><strong>X / Twitter</strong></span>
+        <a class="link reveal" href="https://www.linkedin.com/in/taiye-kotiku" target="_blank" rel="noopener" style="--d: 240ms">
+          <span class="name"><span class="handle">05</span><strong>LinkedIn</strong></span>
           <span class="arr">↗</span>
         </a>
-        <a class="link reveal" href="mailto:kotikutaiye@gmail.com" style="--d: 300ms">
-          <span class="name"><span class="handle">06</span><strong>Email</strong></span>
+        <a class="link reveal" href="https://x.com/taiyekotiku" target="_blank" rel="noopener" style="--d: 300ms">
+          <span class="name"><span class="handle">06</span><strong>X / Twitter</strong></span>
+          <span class="arr">↗</span>
+        </a>
+        <a class="link reveal" href="mailto:kotikutaiye@gmail.com" style="--d: 360ms">
+          <span class="name"><span class="handle">07</span><strong>Email</strong></span>
           <span class="arr">↗</span>
         </a>
       </div>
