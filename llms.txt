@@ -1,27 +1,37 @@
 # Taiye Promise K.
 
-> AI automation developer, product builder, and founder of Kotique Studio. Based in Akure, Nigeria.
+> AI automation developer, product builder, and student. Based in Akure, Nigeria.
 
-Taiye Promise K. is a developer and entrepreneur who builds AI-powered tools, automation systems, and digital products. He is the founder of Kotique Studio, an AI-powered film studio infrastructure project. He studies at FUTA (Federal University of Technology, Akure).
+Taiye Promise K. is a developer and entrepreneur who builds AI-powered tools, automation systems, and digital products. He studies at FUTA (Federal University of Technology, Akure).
 
 ## What he does
 
 - **AI Automation**: Voice agents, WhatsApp bots, n8n workflows. Helps businesses automate slow processes.
 - **Product Building**: Building Ghost Shift (anonymous job marketplace), Broken Hero (browser roguelike), Echo Vault (voice-based personal archive SaaS), and IRONBOUND.
-- **Kotique Studio**: Building AI-powered film studio infrastructure — not making films, building the machine that will.
 - **Student**: Studying at the Federal University of Technology, Akure (FUTA). Tech, always.
+
+## Selected client work
+
+- **DB Studio Voice Agent** — Bilingual AI voice agent (French & English) handling inbound sales calls, lead qualification, and appointment booking. Built with Retell AI and Twilio.
+- **Neo AI Running Coach** — WhatsApp-based AI running coach with automated subscription billing. Delivers personalized weekly training plans. Built with n8n, GPT-4o, Stripe, and Supabase.
+- **Justin Project** — AI marketing automation for an e-commerce brand. Generates product image composites using Google Gemini and auto-posts to Instagram via batch processing.
+- **Fashion Product Scraper** — AI-powered scraper using GPT-4 Vision to extract graphic tees from major retailers and sync to Airtable.
+- **Slack AI Bot** — Multi-channel AI bot for Slack with file analysis capabilities.
 
 ## Currently building
 
 - Ghost Shift — Anonymous job marketplace. In development.
 - Broken Hero — Browser roguelike with deck-building. In development.
 - Echo Vault — Voice-based personal archive SaaS. Planned.
-- Kotique Studio — AI film studio infrastructure. Active.
 - IRONBOUND — In development.
+- LeadOro — AI-powered lead automation system. Multi-channel (WhatsApp, Instagram, Facebook Ads). Responds in 10 seconds, qualifies leads, books appointments, follows up automatically.
 
 ## Connect
 
+- Book a call: https://cal.com/taiye-kotiku/15min
 - Upwork: https://www.upwork.com/freelancers/~01b3e3f59cbf1205f6
 - Fiverr: https://www.fiverr.com/taiyekotiku
 - GitHub: https://github.com/taiye-kotiku
+- LinkedIn: https://www.linkedin.com/in/taiye-kotiku
+- X / Twitter: https://x.com/taiyekotiku
 - Email: kotikutaiye@gmail.com
